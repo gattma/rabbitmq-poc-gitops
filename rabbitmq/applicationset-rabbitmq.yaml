@@ -30,7 +30,7 @@ spec:
           - CreateNamespace=true
       source:
         # URL of the repository
-        repoURL: https://github.com/gattma/rabbitmq-gitops.git # git@github.com:gattma/rabbitmq-gitops.git
+        repoURL: https://github.com/LeitnerMi/rabbitmq-poc-gitops.git
         # Revision (tag/branch/commit) of the repository (eg HEAD)
         targetRevision: "{{ branch }}"
         # Path within the repository where Kubernetes manifests (and/or Helm, Kustomize, Jsonnet resources) are located

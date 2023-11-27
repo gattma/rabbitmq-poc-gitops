@@ -1,7 +1,7 @@
 apiVersion: rabbitmq.com/v1beta1
 kind: User
 metadata:
-  name: user-test
+  name: user-topics
   namespace: hello-world-cluster
 spec:
   tags:
@@ -10,4 +10,4 @@ spec:
   rabbitmqClusterReference:
     name: hello-world
   importCredentialsSecret:
-      name: user-test-secret # name of the secret
+      name: user-topics-secret # name of the secret

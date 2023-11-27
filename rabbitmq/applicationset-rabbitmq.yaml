@@ -17,6 +17,10 @@ spec:
             url: https://kubernetes.default.svc
             branch: consumer-producer
             type: configuration
+          - env: topics
+            url: https://kubernetes.default.svc
+            branch: topics
+            type: configuration
   template:
     metadata:
       name: "rabbitmq-{{type}}-{{env}}"

@@ -12,6 +12,9 @@ spec:
           - env: consumer-producer
             url: https://kubernetes.default.svc
             branch: consumer-producer
+          - env: topics
+            url: https://kubernetes.default.svc
+            branch: topics
   template:
     metadata:
       name: "quarkus-app-{{env}}"

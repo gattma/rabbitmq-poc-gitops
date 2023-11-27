@@ -21,6 +21,7 @@ spec:
     metadata:
       name: "rabbitmq-{{type}}-{{env}}"
     spec:
+      project: default
       syncPolicy:
         automated:
           prune: true

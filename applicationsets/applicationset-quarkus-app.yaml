@@ -16,7 +16,7 @@ spec:
     metadata:
       name: "quarkus-app-{{env}}"
     spec:
-      project: rabbitmq
+      project: default
       syncPolicy:
         automated:
           prune: true

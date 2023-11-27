@@ -1,11 +1,12 @@
 apiVersion: rabbitmq.com/v1beta1
 kind: Binding
 metadata:
-  name: binding-test-queue-exchange
+  name: binding-wien-queue-exchange
   namespace: hello-world-cluster
 spec:
-  source: test # an existing exchange
-  destination: test-queue # an existing queue
+  source: topic-exchange # an existing exchange
+  destination: wien-queue # an existing queue
+  routingKey: "wien"
   destinationType: queue # can be 'queue' or 'exchange'
   rabbitmqClusterReference:
     name: hello-world

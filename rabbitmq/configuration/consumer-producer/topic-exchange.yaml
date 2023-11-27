@@ -1,11 +1,11 @@
 apiVersion: rabbitmq.com/v1beta1
 kind: Exchange
 metadata:
-  name: test-exchange
+  name: topic-exchange
   namespace: hello-world-cluster
 spec:
   name: test # name of the exchange
-  type: fanout # default to 'direct' if not provided; can be set to 'direct', 'fanout', 'headers', and 'topic'
+  type: topic # default to 'direct' if not provided; can be set to 'direct', 'fanout', 'headers', and 'topic'
   autoDelete: false
   durable: true
   rabbitmqClusterReference:

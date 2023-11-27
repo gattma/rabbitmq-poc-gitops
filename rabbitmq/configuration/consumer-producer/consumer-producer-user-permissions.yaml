@@ -5,7 +5,7 @@ metadata:
   namespace: hello-world-cluster
 spec:
   vhost: "/"
-  user: "test-user" # name of the RabbitMQ user
+  user: "consumer-producer-user" # name of the RabbitMQ user
   permissions:
     write: ".*"
     configure: ".*"

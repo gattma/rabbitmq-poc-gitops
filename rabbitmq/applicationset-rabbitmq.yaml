@@ -19,7 +19,7 @@ spec:
             type: configuration
   template:
     metadata:
-      name: "quarkus-app-{{env}}"
+      name: "rabbitmq-{{type}}-{{env}}"
     spec:
       project: rabbitmq
       syncPolicy:

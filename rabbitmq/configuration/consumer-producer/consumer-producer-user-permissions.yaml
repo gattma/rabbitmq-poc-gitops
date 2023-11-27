@@ -1,11 +1,11 @@
 apiVersion: rabbitmq.com/v1beta1
 kind: Permission
 metadata:
-  name: test-user-permissions
+  name: consumer-producer-user-permissions
   namespace: hello-world-cluster
 spec:
   vhost: "/"
-  user: "test-user" # name of the RabbitMQ user
+  user: "consumer-producer-user" # name of the RabbitMQ user
   permissions:
     write: ".*"
     configure: ".*"

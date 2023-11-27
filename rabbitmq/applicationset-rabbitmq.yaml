@@ -34,7 +34,7 @@ spec:
         # Revision (tag/branch/commit) of the repository (eg HEAD)
         targetRevision: "{{ branch }}"
         # Path within the repository where Kubernetes manifests (and/or Helm, Kustomize, Jsonnet resources) are located
-        path: rabbitq/{{ type }}/{{ env }}
+        path: rabbitmq/{{ type }}/{{ env }}
       destination:
         server: "{{url}}"
         namespace: "rabbitmq-{{env}}"

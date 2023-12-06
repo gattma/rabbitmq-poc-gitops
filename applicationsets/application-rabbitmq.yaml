@@ -9,6 +9,12 @@ spec:
     repoURL: https://github.com/LeitnerMi/rabbitmq-poc-gitops.git
     targetRevision: HEAD
     path: rabbitmq
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

@@ -4,7 +4,7 @@ metadata:
   name: topic-exchange
   namespace: hello-world-cluster
 spec:
-  name: test # name of the exchange
+  name: topic-exchange # name of the exchange
   type: topic # default to 'direct' if not provided; can be set to 'direct', 'fanout', 'headers', and 'topic'
   autoDelete: false
   durable: true

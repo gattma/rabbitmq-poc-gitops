@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/LeitnerMi/rabbitmq-poc-gitops.git
-    targetRevision: HEAD
+    targetRevision: main
     path: rabbitmq
   syncPolicy:
     automated:

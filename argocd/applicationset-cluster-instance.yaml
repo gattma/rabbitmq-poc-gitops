@@ -34,4 +34,4 @@ spec:
         path: cluster-instance/env/{{ branch }}
       destination:
         server: {{ url }}
-        namespace: "rabbitmq-instance-{{ env }}"
+        namespace: rabbitmq-instance-{{ branch }}

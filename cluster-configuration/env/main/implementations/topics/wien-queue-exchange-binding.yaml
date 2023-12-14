@@ -2,7 +2,6 @@ apiVersion: rabbitmq.com/v1beta1
 kind: Binding
 metadata:
   name: binding-wien-queue-exchange
-  namespace: hello-world-cluster
 spec:
   source: topic-exchange # an existing exchange
   destination: wien-queue # an existing queue
@@ -10,3 +9,5 @@ spec:
   destinationType: queue # can be 'queue' or 'exchange'
   rabbitmqClusterReference:
     name: hello-world
+    namespace: rabbitmq-instance-main
+

@@ -2,7 +2,6 @@ apiVersion: rabbitmq.com/v1beta1
 kind: Permission
 metadata:
   name: topics-user-permissions
-  namespace: hello-world-cluster
 spec:
   vhost: "/"
   user: "test-user" # name of the RabbitMQ user
@@ -12,3 +11,4 @@ spec:
     read: ".*"
   rabbitmqClusterReference:
     name: hello-world
+    namespace: rabbitmq-instance-main

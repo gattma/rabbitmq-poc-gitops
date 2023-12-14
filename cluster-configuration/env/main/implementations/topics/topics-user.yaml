@@ -2,7 +2,6 @@ apiVersion: rabbitmq.com/v1beta1
 kind: User
 metadata:
   name: user-topics
-  namespace: hello-world-cluster
 spec:
   tags:
     - policymaker
@@ -11,3 +10,4 @@ spec:
     name: hello-world
   importCredentialsSecret:
       name: user-topics-secret # name of the secret
+      namespace: rabbitmq-instance-main

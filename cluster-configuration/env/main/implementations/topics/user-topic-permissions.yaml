@@ -11,3 +11,4 @@ spec:
     read: ".*"
   rabbitmqClusterReference:
     name: hello-world
+    namespace: rabbitmq-instance-main

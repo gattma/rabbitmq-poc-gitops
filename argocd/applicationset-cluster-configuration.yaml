@@ -14,7 +14,7 @@ spec:
             branch: main
   template:
     metadata:
-      name: "rabbitmq-configuration-{{impl}}-{{env}}"
+      name: "rabbitmq-configuration-{{impl}}-{{branch}}"
     spec:
       project: default
       syncPolicy:
@@ -32,4 +32,4 @@ spec:
         path: cluster-configuration/env/{{ branch }}/implementations/{{ impl }}
       destination:
         server: "{{url}}"
-        namespace: "{{impl}}-app-{{env}}"
+        namespace: "{{impl}}-app-{{branch}}"

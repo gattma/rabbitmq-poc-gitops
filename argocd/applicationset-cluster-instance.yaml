@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       name: "rabbitmq-instance-{{ branch }}"
-      annotations:
+      annotations:oo
         rabbitmq.com/topology-allowed-namespaces: "*-app-{{ branch }}"
     spec:
       project: default

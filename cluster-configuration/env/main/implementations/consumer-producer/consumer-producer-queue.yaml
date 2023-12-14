@@ -8,3 +8,4 @@ spec:
   durable: true
   rabbitmqClusterReference:
     name: hello-world
+    namespace: rabbitmq-instance-main

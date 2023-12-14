@@ -8,6 +8,7 @@ spec:
     - administrator
   rabbitmqClusterReference:
     name: hello-world
+    namespace: rabbitmq-instance-main
   importCredentialsSecret:
       name: user-topics-secret # name of the secret
-      namespace: rabbitmq-instance-main
+

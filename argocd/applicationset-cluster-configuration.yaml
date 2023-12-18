@@ -35,4 +35,4 @@ spec:
         path: cluster-configuration/env/{{ branch }}/implementations/{{ impl }}
       destination:
         server: "{{url}}"
-        namespace: "{{impl}}-app-{{branch}}"
+        namespace: "rabbitmq-instance-{{ branch }}"

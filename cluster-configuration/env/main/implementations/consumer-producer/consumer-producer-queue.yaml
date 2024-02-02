@@ -7,5 +7,5 @@ spec:
   autoDelete: false
   durable: true
   rabbitmqClusterReference:
-    name: hello-world
+    name: rabbitmq-main
     namespace: rabbitmq-instance-main

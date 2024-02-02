@@ -2,13 +2,12 @@ apiVersion: rabbitmq.com/v1beta1
 kind: User
 metadata:
   name: user-consumer-producer
-
 spec:
   tags:
     - policymaker
     - administrator
   rabbitmqClusterReference:
-    name: hello-world
+    name: rabbitmq-main
     namespace: rabbitmq-instance-main
   importCredentialsSecret:
       name: user-consumer-producer-secret # name of the secret

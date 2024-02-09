@@ -9,15 +9,3 @@ spec:
   rabbitmqClusterReference:
     name: rabbitmq-main
     namespace: rabbitmq-instance-main
----
-apiVersion: rabbitmq.com/v1beta1
-kind: Queue
-metadata:
-  name: gattma-queue # name of this custom resource; does not have to the same as the actual queue name
-spec:
-  name: gattma-queue # name of the queue
-  autoDelete: false
-  durable: true
-  rabbitmqClusterReference:
-    name: rabbitmq-main
-    namespace: rabbitmq-instance-main

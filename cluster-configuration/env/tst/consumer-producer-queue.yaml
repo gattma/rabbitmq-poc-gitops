@@ -1,0 +1,11 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: Queue
+metadata:
+  name: test-queue # name of this custom resource; does not have to the same as the actual queue name
+spec:
+  name: test-queue-tst # name of the queue
+  autoDelete: false
+  durable: true
+  rabbitmqClusterReference:
+    name: rabbitmq-tst
+    namespace: rabbitmq-instance-tst

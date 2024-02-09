@@ -1,0 +1,11 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: User
+metadata:
+  name: gattma
+spec:
+  tags:
+    - policymaker
+    - administrator
+  rabbitmqClusterReference:
+    name: rabbitmq-tst
+    namespace: rabbitmq-instance-tst

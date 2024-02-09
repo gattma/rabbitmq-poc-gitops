@@ -1,0 +1,11 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: Binding
+metadata:
+  name: binding-test-queue-exchange
+spec:
+  source: test # an existing exchange
+  destination: test-queue-tst # an existing queue
+  destinationType: queue # can be 'queue' or 'exchange'
+  rabbitmqClusterReference:
+    name: rabbitmq-tst
+    namespace: rabbitmq-instance-tst

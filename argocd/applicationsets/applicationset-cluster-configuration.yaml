@@ -17,7 +17,7 @@ spec:
             branch: main
   template:
     metadata:
-      name: "rabbitmq-configuration-{{branch}}"
+      name: "rabbitmq-configuration-{{env}}"
     spec:
       project: default
       syncPolicy:

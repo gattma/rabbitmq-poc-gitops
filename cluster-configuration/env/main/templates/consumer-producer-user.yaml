@@ -7,7 +7,7 @@ spec:
     - policymaker
     - administrator
   rabbitmqClusterReference:
-    name: rabbitmq-main
-    namespace: rabbitmq-instance-main
+    name: rabbitmq-{{ .Values.env }}
+    namespace: rabbitmq-instance-{{ .Values.env }}
   importCredentialsSecret:
       name: user-consumer-producer-secret # name of the secret

@@ -1,0 +1,5 @@
+env: main
+exchange:
+  name: test
+queue:
+  name: test

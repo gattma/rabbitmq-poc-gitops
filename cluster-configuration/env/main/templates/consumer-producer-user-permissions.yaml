@@ -10,5 +10,5 @@ spec:
     configure: ".*"
     read: ".*"
   rabbitmqClusterReference:
-    name: rabbitmq-main
-    namespace: rabbitmq-instance-main
+    name: rabbitmq-{{ .Values.env }}
+    namespace: rabbitmq-instance-{{ .Values.env }}

@@ -15,8 +15,6 @@ spec:
   template:
     metadata:
       name: "rabbitmq-instance-{{ env }}"
-#      annotations:
-#        rabbitmq.com/topology-allowed-namespaces: "*-app-{{ branch }}"
     spec:
       project: default
       syncPolicy:
@@ -26,11 +24,8 @@ spec:
         syncOptions:
           - CreateNamespace=true
       source:
-        # URL of the repository
         repoURL: https://github.com/gattma/rabbitmq-poc-gitops.git
-        # Revision (tag/branch/commit) of the repository (eg HEAD)
         targetRevision: "{{ branch }}"
-        # Path within the repository where Kubernetes manifests (and/or Helm, Kustomize, Jsonnet resources) are located
         path: "cluster-instance/env/{{ env }}"
       destination:
         server: "{{ url }}"

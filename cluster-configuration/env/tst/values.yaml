@@ -1,5 +1,0 @@
-env: tst
-exchange:
-  name: test
-queue:
-  name: test

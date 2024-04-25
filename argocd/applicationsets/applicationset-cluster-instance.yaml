@@ -11,10 +11,7 @@ spec:
         elements:
           - url: https://kubernetes.default.svc
             env: main
-            branch: main
-          - url: https://kubernetes.default.svc
-            env: tst
-            branch: main            
+            branch: main    
   template:
     metadata:
       name: "rabbitmq-instance-{{ env }}"

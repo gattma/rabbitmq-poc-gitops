@@ -9,3 +9,15 @@ spec:
   rabbitmqClusterReference:
     name: rabbitmq-{{ .Values.env }}
     namespace: rabbitmq-instance-{{ .Values.env }}
+---
+apiVersion: rabbitmq.com/v1beta1
+kind: Queue
+metadata:
+  name: marko
+spec:
+  name: marko
+  autoDelete: false
+  durable: true
+  rabbitmqClusterReference:
+    name: rabbitmq-{{ .Values.env }}
+    namespace: rabbitmq-instance-{{ .Values.env }}
